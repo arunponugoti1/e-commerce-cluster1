@@ -1,0 +1,21 @@
+---
+apiVersion:
+kind: Pod 
+metadata:
+  name: pod-resource
+  labels:
+    name: resource-qouta
+    env: dev
+  annotations:
+    app.managed_by: Arun Ponugoti
+spec:
+  containers:
+    - name: nginx-resource
+      image: nginx 
+      resources: 
+        requests: #soft limit
+          cpu: "100m"
+          memory: "128Mi"
+        limits: #hard limit
+          cpu: "200m"
+          memory: "256Mi"
