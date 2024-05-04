@@ -11,7 +11,8 @@ metadata:
 spec:
   containers:
     - name: nginx-resource
-      image: nginx 
+      image: nginx
+      imagePullPolicy: Always  
       resources: 
         requests: #soft limit
           cpu: "100m"

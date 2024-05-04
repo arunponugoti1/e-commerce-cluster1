@@ -1,4 +1,5 @@
 # e-commerce-cluster1
+# kubectl api-resources: It will shows the cluster level namespace level resources and find the api version
 # I'll deploy simple nginx web app
 # Added service also
 # Today i have created New GKE cluster through UI
