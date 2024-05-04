@@ -3,6 +3,9 @@ kind:  Pod
 metadata:
   name: labels-pod
   namespace: roboshop
+  labels:
+    app: frount-end
+    env: dev
   annotations:
     app.managed_by: Arun 
 spec:
