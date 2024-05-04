@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: ConfigMap 
 metadata:
-  name: configMap-1
+  name: configMap
 data:
   purpose: put reuseable values here
   usage: you can use this info in the pod 
