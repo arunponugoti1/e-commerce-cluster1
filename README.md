@@ -8,4 +8,6 @@
 # I have created new one 
 # Labels: Uses for two reasons 1. identify 2.which we use for some functionlity for selectors
 # Annotations: We use this for external resources in k8s
+# database usernamegive in the configmaps 
+# Database passwords give me in the secrets
 
