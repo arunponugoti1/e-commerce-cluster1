@@ -8,8 +8,8 @@ spec:
       image: alpine
       command: ["sleep", "3600"]
       envFrom:
-        - configMapRef:
-            name: env-variable
+      - configMapRef:
+          name: env-variable
 
 
         
