@@ -1,10 +1,11 @@
 apiVersion: v1
 kind:  Pod 
 metadata:
-  name: labels 
+  name: labels-pod
+  namespace: frount-end
   labels:
     environment: Dev
-    app: nginx 
+    app: frount-end
 spec:
   containers:
     - name: nginx-label
