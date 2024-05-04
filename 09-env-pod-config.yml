@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: game-demo-pod
+  name: game-demo-podd
 spec:
   containers:
     - name: demo
