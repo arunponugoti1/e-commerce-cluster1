@@ -2,7 +2,7 @@ apiVersion: v1
 kind:  Pod 
 metadata:
   name: labels-pod
-  namespace: frount-end
+  namespace: roboshop
   labels:
     environment: Dev
     app: frount-end
