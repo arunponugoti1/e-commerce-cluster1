@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: env-variable
 data:
-  # property-like keys; each key maps to a simple value
+  # property-like keys; each key maps to a simple value 
   player_initial_lives: "12hsgdi48efeff"
   ui_properties_file_name: "sqlserver"
 
