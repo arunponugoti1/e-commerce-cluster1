@@ -7,6 +7,6 @@ metadata:
     app: nginx 
 spec:
   containers:
-    - name: nginx-label
+    - name: nginx-labels
       image: nginx 
       
