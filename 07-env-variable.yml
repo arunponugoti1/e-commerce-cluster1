@@ -9,7 +9,9 @@ spec:
   - name: envar-demo-container
     image: gcr.io/google-samples/node-hello:1.0
     env:
-    - name: DEMO_GREETING
-      value: "Hello from the environment"
-    - name: DEMO_FAREWELL
-      value: "Such a sweet sorrow"
+      - name: PLAYER_INITIAL_LIVES # Notice that the case is different here
+                                     # from the key name in the ConfigMap.
+        valueFrom:
+            configMapKeyRef:
+              name: game-demo           # The ConfigMap this value comes from.
+              key: porpose # The key to fetch.
