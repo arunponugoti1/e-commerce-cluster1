@@ -1,0 +1,12 @@
+apiVersion: v1
+kind:  Pod 
+metadata:
+  name: labels-pod
+  namespace: roboshop
+  annotations:
+    app.managed_by: Arun 
+spec:
+  containers:
+    - name: nginx-label
+      image: nginx 
+      
