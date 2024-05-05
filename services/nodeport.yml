@@ -4,8 +4,7 @@ metadata:
   name: nginx
   namespace: roboshop
   labels:
-    app.kubernetes.io/name: MyApp
-spec:
+    service_port: node_port
   containers:
   - name: nginx
     image: nginx:stable
@@ -22,7 +21,7 @@ metadata:
 spec:
   type: NodePort
   selector:
-    app.kubernetes.io/name: MyApp
+    service_port: node_port
   ports:
     - name: name-of the-serive-port
       protocol: TCP
