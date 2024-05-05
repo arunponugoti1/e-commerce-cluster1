@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx  #Deployment label
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx # replica label which should match with teplate labels
+  template:
+    metadata:
+      labels:
+        app: nginx  # Template label
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
