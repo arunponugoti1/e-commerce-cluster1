@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:   #replicaset labels
+    app: guestbook
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:  
+    matchLabels:  #These labels match with pod lables or difinations
+                  #When match labels match then only it will take 
+                  #replica so becarefull wile configuring matchlabels with template labels
+      tier: frontend
+  template: # template is nothing but pod difination Inside the template difine the pods specifications
+    metadata:
+      labels:     #it should match with match labels
+        tier: frontend
+    spec:
+      containers:
+      - name: php-redis
+        image: nginx
