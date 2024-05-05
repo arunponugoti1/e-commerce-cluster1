@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Pod 
 metadata: 
-  name: serviceloadbalancer
+  name: serviceload
   labels:
     env: dev
   namespace: roboshop
 spec:
   containers:
-  - name: nginx 
+  - name: nginx-loadbalancer
     image: nginx 
     ports:
       - containerPort: 80
