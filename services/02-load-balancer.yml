@@ -4,7 +4,7 @@ metadata:
   name: serviceloadbalancer
   labels:
     env: dev
-  namespace: arunns
+  namespace: roboshop
 spec:
   containers:
   - name: nginx 
