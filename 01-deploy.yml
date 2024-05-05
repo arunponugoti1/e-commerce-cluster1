@@ -5,7 +5,7 @@ metadata:
   name: nginx
   namespace: roboshop
   labels:
-    app.kubernetes.io/name: proxy
+    app.kubernetes.io/name: MyApp
 spec:
   containers:
   - name: nginx
