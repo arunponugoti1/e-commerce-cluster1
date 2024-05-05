@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx  #Deployment label
 spec:
-  replicas: 3
+  replicas: 15
   selector:
     matchLabels:
       app: nginx # replica label which should match with teplate labels
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  #changing 
+        image: nginx:1.14.2  #changing 
         ports:
         - containerPort: 80
