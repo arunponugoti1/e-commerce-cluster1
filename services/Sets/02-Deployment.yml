@@ -5,7 +5,7 @@ metadata:
   labels:
     app: nginx  #Deployment label
 spec:
-  replicas: 15
+  replicas: 3
   selector:
     matchLabels:
       app: nginx # replica label which should match with teplate labels
