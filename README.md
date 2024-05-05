@@ -12,5 +12,9 @@
 # Database passwords give me in the secrets
 ====================
 Sets:
+ReplicaSets: It will create the desired state of the Pods, by using this resource we can create pods but not update
+Deployments: This is the Ideal for the stateless or static pods to deploy in the K8s. When you update pods with latest image it will auotmatically deploy latest one.
+    When you upgraded new version it will use the replicasets and first delete one pod and create new version again delete old version and create new version so you no need downtime for this.
+    
 
 
