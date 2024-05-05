@@ -11,7 +11,6 @@ spec:
     image: nginx 
     ports:
       - containerPort: 80
-        name: http-web
         
 ---
 apiVersion: v1
@@ -20,11 +19,9 @@ metadata:
   name: nginx-serice 
 spec: 
   type: LoadBalancer 
+  ports:
+  - port: 80
+    targetPort: 80
   selector: 
      env: dev
-  ports:
-  - name: name-of-service
-    protocol: TCP
-    port: 80
-    targetPort: http-web
   
